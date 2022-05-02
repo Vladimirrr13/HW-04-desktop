@@ -55,7 +55,7 @@ img {
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
-outline: 2px solid red;
+/* outline: 2px solid red; */
 }
 
 section {
@@ -67,8 +67,10 @@ section {
 .header {
     background-color: var(--third-background-color);
     border-bottom: 1px solid #ececec;
-    padding-top: 32px;
-    padding-bottom: 32px;
+}
+
+.header-container {
+    display: flex;
 }
 
 .header-logo {
@@ -104,10 +106,11 @@ margin-right: 93px;
 .header-contact-list {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
-.heder-connect {
-margin-left: auto;
+.header-contact-item{
+    display: block;
 }
 
 .header-contact-item:not(:first-child) {
@@ -120,10 +123,12 @@ margin-left: auto;
 }
 
 .header-link {
+    display: block;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--title-color);
+padding: 32px 0;
 }
 
 .header-link:hover,
@@ -135,14 +140,25 @@ color: var(--header-hover-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--header-color-contact);
+    color: var(--contact-text-color);
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
 }
 
 .header-mail {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--header-color-contact);
+    color: var(--contact-text-color);
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.header-contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 .header-tel:hover,
@@ -152,15 +168,17 @@ color: var(--header-hover-color);
     color: var(--header-hover-color);
 }
 
-/*-------------HERO--------*/
+/*-------------------------HERO----------------------------*/
 
 .hero {
+    width: 1600px;
+    margin: 0 auto;
     background-color: var(--first-background-color);
-    padding: 0;
-}
-
-.hero .container {
-    padding: 200px;   
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding:200px 0;
 }
 
 .hero-title {
@@ -181,7 +199,7 @@ margin-bottom: 30px;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
-display: flex;
+display: block;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
@@ -191,6 +209,9 @@ cursor: pointer;
 margin: 0 auto;
 height: 50px;
 min-width: 200px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
 }
 
 .hero-btn-text {
@@ -205,10 +226,10 @@ min-width: 200px;
 
 /*-------------quality--------*/
 
-/* .quality .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-} */
+
+.quality {
+    padding-bottom: 0;
+}
 
 .visually-hidden {
     position: absolute;
@@ -225,12 +246,21 @@ min-width: 200px;
 
 .quality-list {
     display: flex;
-    justify-content: space-between;
 }
 
-/*.quality-item:not(:last-child) {
-    margin-left: 30px;
-}*/
+.quality-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.quality-item-icon {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--second-background-color);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
 
 .quality-title {
 font-weight: 700;
@@ -314,12 +344,18 @@ margin-bottom: 50px;
     padding-bottom: 94px; */
 }
 
+.team-item {
+    background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
 .team-list > li:not(:last-child){
     margin-right: 30px;
 } 
 
-.img-item {
-margin-bottom: 30px;
+.team-text {
+    padding: 30px 0;
 }
 
 .team-subtitle{
@@ -338,9 +374,78 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-color);
-margin-bottom: 30px;
 }
 
+.team-soc-list {
+    display: flex;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: space-between;
+}
+
+.team-soc-link {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+}
+
+.team-soc-icon {
+    fill: currentColor;
+}
+
+.team-soc-link:hover {
+    background: var(--header-hover-color);
+    color: var(--third-background-color);
+}
+
+/*---------- Section 4------- */
+/*-------- clients --------*/
+
+.client-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 50px;
+}
+
+.client-list {
+    display: flex;
+    justify-content: center;
+}
+
+.client-item + .client-item {
+    margin-left: 30px;
+}
+
+.client-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    color: #afb1b8;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
+.client-icon {
+    fill: currentColor;
+}
+
+.client-link:focus,
+.client-link:hover {
+    color: var(--header-hover-color);
+    border: 1px solid var(--header-hover-color);
+}
 /*-------------footer--------*/
 
 .footer {
@@ -400,6 +505,49 @@ margin-bottom: 9px;
     color: var(--header-hover-color);
 }
 
+.footer-links{
+    margin-left: 70px;
+}
+
+.footer-links-title{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--third-background-color);
+    padding-top: 12px;
+    margin-bottom: 20px; 
+}
+
+.footer-soc-list {
+    display: flex;
+}
+
+.footer-soc-list > li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-soc-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+    align-items: center;
+    justify-content: center;
+    color: var(--third-background-color);
+}
+
+.footer-soc-icon {
+    fill: currentColor;
+}
+
+.footer-soc-link:hover {
+    background: var(--header-hover-color);
+    color: var(--third-background-color);
+}
+
 /*-------------Portfolio--------*/
 /*-------------Portfolio header--------*/
 
@@ -420,6 +568,7 @@ cursor: pointer;
 border-radius: 4px;
 border: none;
 padding: 6px 22px;
+display: inline-block;
 }
 
 .activ-btn {
@@ -441,6 +590,7 @@ padding: 6px 22px;
 .services-btn:focus {
     background-color:var(--header-hover-color);
     color: var(--third-background-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .services-list {
@@ -481,6 +631,15 @@ padding: 6px 22px;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 0 auto;
+}
+
+.example-link {
+    display: block;
+}
+
+.example-link:hover,
+.example-link:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .example-text {

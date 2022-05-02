@@ -22,18 +22,28 @@
             <li class="header-item"><a class="header-link link" href="./portfolio.html">Портфолио</a></li>
             <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
           </ul>
-          <div class="heder-connect">
-          <ul class="header-contact-list list">
-            <li class="header-contact-item"><a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="header-contact-item"><a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-          </ul>
-        </div>
         </nav>
+          <ul class="header-contact-list list">
+            <li class="header-contact-item">
+              <a class="header-mail link" href="mailto:info@devstudio.com">
+                <svg class="header-contact-icon" width="16" height="12">
+                <use href="./images/icons/symbol-defs.svg#icon-header-mail"></use>
+              </svg>
+              info@devstudio.com</a></li>
+            <li class="header-contact-item">
+              <a class="header-tel link" href="tel:+380961111111">
+                <svg class="header-contact-icon" width="10" height="16">
+                <use href="./images/icons/symbol-defs.svg#icon-header-tel"></use>
+              </svg>
+              +38 096 111 11 11</a></li>
+          </ul>
         </div>
     </header>
     <!--Основной (уникальный) контент-->
     <main>
-      <!--Section 1-->
+
+      <!--------------------------Section 1------------------->
+
       <section class="hero">
         <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
@@ -47,6 +57,12 @@
         <!--СКРЫТЬ ЗАГЛАВИЕ СSS-->
         <ul class="quality-list list">
           <li class="quality-item">
+            <div class="quality-item-icon">
+              <svg class="header-contact-icon" width="70" height="70">
+                <use href="./images/icons/symbol-defs.svg#icon-anten">
+                </use>
+              </svg>
+            </div>
             <h3 class="quality-title">Внимание к деталям</h3>
             <p class="quality-text">
               Идейные соображения, а также начало повседневной работы по
@@ -54,13 +70,23 @@
             </p>
           </li>
           <li class="quality-item">
+            <div class="quality-item-icon">
+              <svg class="header-contact-icon" width="70" height="70">
+                <use href="./images/icons/symbol-defs.svg#icon-clock"></use>
+              </svg>
+            </div>
             <h3 class="quality-title">Пунктуальность</h3>
             <p class="quality-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="quality-item">
+            <div class="quality-item-icon">
+                            <svg class="header-contact-icon" width="70" height="70">
+                <use href="./images/icons/symbol-defs.svg#icon-schedule"></use>
+              </svg>
+            </div>
             <h3 class="quality-title">Планирование</h3>
             <p class="quality-text">
               Равным образом консультация с широким активом в значительной
@@ -68,6 +94,11 @@
             </p>
           </li>
           <li class="quality-item">
+            <div class="quality-item-icon">
+                            <svg class="header-contact-icon" width="70" height="70">
+                <use href="./images/icons/symbol-defs.svg#icon-astronaut"></use>
+              </svg>
+            </div>
             <h3 class="quality-title">Современные технологии</h3>
             <p class="quality-text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -77,11 +108,12 @@
         </ul>
       </div>
       </section>
-      <!--Section 2-->
+
+      <!--------------------------Section 2------------------->
+
       <section class="about">
         <div class="container">
         <h2 class="about-title">Чем мы занимаемся</h2>
-        <div class="about-work">
         <ul class="about-list list">
           <li class="about-item">
             <img class="img about-img"
@@ -109,9 +141,10 @@
           </li>
         </ul>
       </div>
-      </div>
       </section>
-      <!--Section 3-->
+
+      <!--------------------------Section 3--------------------->
+
       <section class="team">
         <div class="container">
         <h2 class="team-title">Наша команда</h2>
@@ -123,8 +156,40 @@
               width="270"
               height="260"
             />
+            <div class="team-text">
             <h3 class="team-subtitle">Игорь Демьяненко</h3>
             <p class="team-desc" lang="en">Product Designer</p>
+          </div>
+                      <ul class="team-soc-list list">
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="20" height="20">
+                    <use href="./images/icons/symbol-defs.svg#team-soc-icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#team-soc-icon-twitter"></use>
+                </svg>
+              </a>
+              </li>
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#team-soc-icon-facebook"></use>
+                </svg>
+              </a>
+              </li>
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#team-soc-icon-linkedin"></use>
+                </svg>
+              </a>
+              </li>
+            </ul>
           </li>
           <li class="team-item">
             <img class="img-item"
@@ -133,8 +198,40 @@
               width="270"
               height="260"
             />
+            <div class="team-text">
             <h3 class="team-subtitle">Ольга Репина</h3>
             <p class="team-desc" lang="en">Frontend Developer</p>
+          </div>
+          <ul class="team-soc-list list">
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#team-soc-icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#team-soc-icon-twitter"></use>
+              </svg>
+            </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#team-soc-icon-facebook"></use>
+              </svg>
+            </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#team-soc-icon-linkedin"></use>
+              </svg>
+            </a>
+            </li>
+          </ul>
           </li>
           <li class="team-item">
             <img class="img-item"
@@ -143,8 +240,40 @@
               width="270"
               height="260"
             />
+            <div class="team-text">
             <h3 class="team-subtitle">Николай Тарасов</h3>
             <p class="team-desc" lang="en">Marketing</p>
+          </div>
+          <ul class="team-soc-list list">
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#team-soc-icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#team-soc-icon-twitter"></use>
+              </svg>
+            </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#team-soc-icon-facebook"></use>
+              </svg>
+            </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#team-soc-icon-linkedin"></use>
+              </svg>
+            </a>
+            </li>
+          </ul>
           </li>
           <li class="team-item">
             <img class="img-item"
@@ -153,14 +282,101 @@
               width="270"
               height="260"
               />
+              <div class="team-text">
             <h3 class="team-subtitle">Михаил Ермаков</h3>
             <p class="team-desc" lang="en">UI Designer</p>
+          </div>
+          <ul class="team-soc-list list">
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#team-soc-icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#team-soc-icon-twitter"></use>
+              </svg>
+            </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#team-soc-icon-facebook"></use>
+              </svg>
+            </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#team-soc-icon-linkedin"></use>
+              </svg>
+            </a>
+            </li>
+          </ul>
           </li>
         </ul>
       </div>
       </section>
+
+      <!-- --------------------Section 4-------------------->
+      <!----------------- clients ----------------->
+
+      <section class="clients section">
+        <div class="container">
+          <h2 class="client-title">Постоянные клиенты</h2>
+          <ul class="client-list list">
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons/symbol-defs.svg#icon-first-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons/symbol-defs.svg#icon-second-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons/symbol-defs.svg#icon-third-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons/symbol-defs.svg#icon-fourth-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons/symbol-defs.svg#icon-fifth-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons/symbol-defs.svg#icon-sixth-logo"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <!--footer-->
+
+    <!-------------------------footer----------------->
+
     <footer class="footer">
       <div class="container">
         <div class="footer-contact">
@@ -175,6 +391,41 @@
         </ul>
       </address>
     </div>
+    <div class="footer-links">
+      <h2 class="footer-links-title">присоединяйтесь</h2>
+                <ul class="footer-soc-list list">
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#footer-soc-icon-instagram">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#footer-soc-icon-twitter">
+                </use>
+              </svg>
+            </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#footer-soc-icon-facebook">
+                </use>
+              </svg></a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                <use href="./images/icons/symbol-defs.svg#footer-soc-icon-linkedin">
+                </use>
+              </svg></a>
+            </li>
+          </ul>
+      </div>
     </div>
     </footer>
   </body>
